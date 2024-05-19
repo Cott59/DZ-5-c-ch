@@ -9,19 +9,22 @@ namespace DZ_5_c_ch
 {
     public class list_of_books
     {
-        private List<Book> books;
+        private Book[] books;
         public list_of_books(int num) {
-            books = new List<Book>(num);
+            books=new Book[num];
         }
 
-        public void AddBook(Book book) { books.Add(book); }
+        public void AddBook(Book book, int num)
+        {
+            if(num<books.Length-1)
+                books[num] = book;
+        }
         public void RemoveBook(Book book) {
-            books.Remove(book);
+           
         }
         public Book GetBook(int num)
         {
-            books.GetEnumerator();
-            return book;
+            
         }
 
     }
