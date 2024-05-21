@@ -19,10 +19,11 @@
             listOfBooks.RemoveBook(Bk3);
 
             //задание 2
-            MyMatrix a = new MyMatrix(1, 4, 3, 2, 1, 5, 3, 2, 1);
-            MyMatrix b = new MyMatrix(5, 2, 1, 4, 3, 2, 2, 1, 5);
-           // MyMatrix c = a*2;
-            //c.Info();
+            MyMatrix a = new MyMatrix(1, 4, 3, 2, 12, 5, 3, 2, 1);
+            MyMatrix b = new MyMatrix(5, 2, 1, 4, 3, 7, 2, 1, 5);
+
+            MyMatrix c = a*2;
+            c.Info();
             Console.WriteLine();
             MyMatrix d = a * b;
             d.Info();
