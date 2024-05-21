@@ -27,21 +27,17 @@ namespace DZ_5_c_ch
 
         public static bool operator ==(Book left, Book right)
         {
-            
-            left.Name = right.Name;
-            left.Author == right.Author;
-            left.Number_of_pages==right.Number_of_pages;
-            left.Age == right.Age;
-            return true;
-
+            if(left.Name == right.Name && left.Author == right.Author&& left.Number_of_pages == right.Number_of_pages && left.Age == right.Age)
+                 return true;
+            else
+                return false;
         }
         public static bool operator !=(Book left, Book right)
         {
-            left.Name = right.Name;
-            left.Author = right.Author;
-            left.Number_of_pages = right.Number_of_pages;
-            left.Age = right.Age;
-            return true;
+            if (left.Name == right.Name && left.Author == right.Author && left.Number_of_pages == right.Number_of_pages && left.Age == right.Age)
+                return false;
+            else
+                return true;
 
         }
 
